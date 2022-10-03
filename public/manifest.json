@@ -1,6 +1,6 @@
 {
-  "short_name": "Soft Radar Test",
-  "name": "Soft Radar Test JS",
+  "short_name": "ModShop",
+  "name": "ModShop",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
