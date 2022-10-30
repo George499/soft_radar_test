@@ -46,8 +46,13 @@ function Login() {
         <Form onSubmit={handleSubmit(onSubmit)}>
           <div className="grid grid-cols-1 gap-4 mb-[24px]">
             <div className="flex">
-              <label className="w-1/5">First Name</label>
-              <Input {...register("firstName", { required: true })} />
+              <label className="w-1/5" htmlFor="firstName">
+                First Name
+              </label>
+              <Input
+                id="firstName"
+                {...register("firstName", { required: true })}
+              />
             </div>
 
             <div className="flex">

@@ -10,10 +10,11 @@ function Main() {
   const isHasTrousersAndShorts = trousers && shorts;
 
   const handleProductFetch = async () => {
-    const productsResponse = await fetchData();
-    setPoloShirts(productsResponse[0]);
-    setTrousers(productsResponse[1]);
-    setShorts(productsResponse[2]);
+    const [poloShirtsResponse, trouserResponse, shortsResponse] =
+      await fetchData();
+    setPoloShirts(poloShirtsResponse);
+    setTrousers(trouserResponse);
+    setShorts(shortsResponse);
   };
 
   useEffect(() => {
